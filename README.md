@@ -1,6 +1,6 @@
 # llmx-gemini
 
-`llmx-gemini` is a customized version of the original [llmx](https://github.com/victordibia/llmx) library developed by [Victor Dibia](https://github.com/victordibia). This version has been extended to include support for the **Gemini API**.
+`llmx-gemini` is a customized version of the original [llmx](https://github.com/victordibia/llmx) library developed by [Victor Dibia](https://github.com/victordibia). This version has been extended to include support for the **Gemini API** because the **PaLM API** is decomissioned.
 
 ---
 
