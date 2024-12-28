@@ -18,7 +18,7 @@ The original `llmx` library is a powerful API for working with fine-tuned langua
 
 ---
 
-## 📦 Installation
+## Installation
 
 Install directly from this GitHub repository:
 
