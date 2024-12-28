@@ -147,3 +147,31 @@ providers:
             model: uukuguy/speechless-llama2-hermes-orca-platypus-13b
             device_map: auto
             trust_remote_code: true
+  gemini:
+    name: Google
+    description: Google's Gemini AI models
+    models:
+      - name: gemini-1.5-pro
+        max_tokens: 30720
+        model:
+          provider: gemini
+          parameters:
+            model: gemini-1.5-pro
+            api_key: null
+            project_id: null
+      - name: gemini-1.5-flash-8b
+        max_tokens: 30720
+        model:
+          provider: gemini
+          parameters:
+            model: gemini-1.5-flash-8b
+            api_key: null
+            project_id: null
+      - name: gemini-1.5-flash
+        max_tokens: 30720
+        model:
+          provider: gemini
+          parameters:
+            model: gemini-1.5-flash
+            api_key: null
+            project_id: null
