@@ -49,6 +49,15 @@ def test_google():
     assert ("paris" in answer.lower())
     # assert len(google_response.text) == 2 palm may chose to return 1 or 2 responses
 
+def test_gemini():
+    gemini_gen = llm(provider="gemini", api_key=os.environ.get("GEMINI_API_KEY", None))
+    config.model = "gemini-1.5-flash"
+    gemini_response = gemini_gen.generate(messages, config=config)
+    answer = gemini_response.text[0].content
+    print(gemini_response.text[0].content)
+    assert ("paris" in answer.lower())
+    assert len(gemini_response.text) == config.n
+
 
 def test_cohere():
     cohere_gen = llm(provider="cohere")
